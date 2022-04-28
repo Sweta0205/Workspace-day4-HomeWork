@@ -1,0 +1,112 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+
+}
+
+#pin-card {
+    background-image: url("laptop.jpg");
+    background-size: contain;
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    padding: 5px;
+    border: 1px black;
+    background-color: none;
+    margin: 100px;
+    margin-top: 200px;
+    overflow: hidden;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    transition: box-shadow .3s;
+    z-index: 1;
+    position: relative;
+    
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+#pin-overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+    overflow: hidden;
+
+}
+
+#pin-card:hover #pin-overlay {
+    transform: translateX(300px);
+}
+
+#save {
+
+    background-color: red;
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    border-radius: 40px;
+    border: 5px solid red;
+    left: 160px;
+    text-align: center;
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+#pin-card:hover #save {
+    transform: translateX(300px);
+}
+
+
+#westwing {
+    background-color: white;
+    width: 120px;
+    height:40px;
+    border-radius: 40px;
+    margin-top: 300px;
+    position: absolute;
+    color: black;
+    display: block;
+    float: left;
+    text-align: center;
+    display: flex;
+
+
+}
+#pin-card:hover #westwing {
+    transform: translateX(300px);
+}
+
+#upload {
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 290px;
+    margin-left: 121px;
+
+
+}
+#pin-card:hover #upload {
+    transform: translateX(200px);
+}
+#ping-dot {
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 290px;
+    margin-left: 26px;
+
+
+
+}
+#pin-card:hover #ping-dot {
+    transform: translateX(100px);
+}
